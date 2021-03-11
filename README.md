@@ -8,7 +8,7 @@ To use put it in the same folder as the file you are working on and import it in
 from csvReader import pycsv
 ```
 
-Right now you can access your csv data using a new `pycsv()`object and then calling the `read_csv()` method on your object:
+You can access your csv data using a new `pycsv()`object and then calling the `read_csv()` method on your object:
 The `read_csv()` method takes the arguments `'columnHeaders'` and `'columnNames'`
 
 ```python
