@@ -117,8 +117,11 @@ class pycsv:
         return self.table
     
     def count(self, axis='index'):
+        # If the axis is 'index'
         if axis.lower() == "index":
+            # Set the column number to 0
             colNum = 0
+            
             for col in self.headers[1:]:
                 print("{:<10} {:<10}".format(col, len(list(self.table.values())[colNum])))
                 colNum += 1

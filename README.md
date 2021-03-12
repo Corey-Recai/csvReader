@@ -9,7 +9,7 @@ from csvReader import pycsv
 ```
 
 You can access your csv data using a new `pycsv()`object and then calling the `read_csv()` method on your object:
-The `read_csv()` method takes the arguments `'columnHeaders'` and `'columnNames'`
+The `read_csv()` method takes the arguments `columnHeaders` and `columnNames`
 
 ```python
 df = pycsv(file="filename.csv")
@@ -17,7 +17,7 @@ df.read_csv()
 ```
 
 You can also use the `count()` method like this:
-It takes the argument axis as either `'index'` or `'columns'`
+It takes the argument `axis` as either `'index'` or `'columns'`
 
 ```python
 df.count(axis="index")
@@ -29,14 +29,14 @@ The `data()` method returns the csv as a dictionary:
 df.data()
 ```
 
-The `_sum()` method takes a `'columnName'` argument and returns the sum of the column or the sum of each column:
+The `_sum()` method takes a `columnName` argument and returns the sum of the column or the sum of each column:
 
 ```python
-df.sum()
-df.sum(columnName="columnName")
+df._sum()
+df._sum(columnName="columnName")
 ```
 
-The `diff()` method take a `'columnName'` argument and returns the difference between each row in the column. Values can not be alphanumeric:
+The `diff()` method take a `columnName` argument and returns the difference between each row in the column. Values can not be alphanumeric:
 
 ```python
 df.diff(columnName="columnName")
